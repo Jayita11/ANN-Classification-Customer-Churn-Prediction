@@ -87,9 +87,10 @@ Use the prediction.ipynb notebook to demonstrate how to use the trained model fo
 Achieved an impressive accuracy of 86.01% with the developed Artificial Neural Network (ANN) model, showcasing the effectiveness of the predictive model in customer churn prediction.
 
 ### Deployment
-Deploy the model using a Streamlit app (app.py). The app allows users to input customer data and get churn predictions. To run the app, execute the following command:```sh
+Deploy the model using a Streamlit app (app.py). The app allows users to input customer data and get churn predictions. To run the app, execute the following command:
+```sh
     streamlit run app.py
-    ```
+```
 
 
 This starts a web server and opens the app in the default web browser, enabling interaction with the model for churn predictions.
