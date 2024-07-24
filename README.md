@@ -85,26 +85,26 @@ To set up TensorBoard, follow these steps:
 
 1. Import TensorBoard and create a callback:
     ```python
-    from tensorflow.keras.callbacks import TensorBoard
+    from tensorflow.keras.callbacks import EarlyStopping,TensorBoard
     import datetime
 
     log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
+    tensorflow_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
     ```
 
 2. Include the callback in the model training process:
     ```python
     model.fit(
-        x_train, y_train,
-        epochs=50,
-        validation_data=(x_test, y_test),
-        callbacks=[tensorboard_callback]
+        X_train, y_train,
+        validation_data=(X_test, y_test),
+        epochs=100,
+        callbacks=[tensorflow_callback,early_stopping_callback]
     )
     ```
 
 3. To launch TensorBoard, use the following command in your terminal:
     ```sh
-    tensorboard --logdir=logs/fit
+    %tensorboard --logdir=logs/fit
     ```
 
 The trained model is saved as model.h5.
