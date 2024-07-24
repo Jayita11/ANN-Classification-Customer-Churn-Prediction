@@ -136,4 +136,28 @@ To run this project, you need to have Python installed on your machine. Follow t
     pip install -r requirements.txt
     ```
 
+## Usage
 
+### Experiments
+
+Conduct various experiments to test different configurations of the ANN model and evaluate their performance.
+
+### Model Prediction
+
+Use the `prediction.ipynb` notebook to demonstrate how to use the trained model for predicting customer churn on new data.
+
+### Deployment
+
+Deploy the model using a Streamlit app. The app allows users to input customer data and get churn predictions.
+
+## Streamlit App
+
+### Setup
+
+To set up the Streamlit app, ensure you have all the required packages installed as mentioned in the [Installation](#installation) section.
+
+### Running the App
+
+To run the Streamlit app, navigate to the project directory and execute the following command:
+```sh
+streamlit run app.py
