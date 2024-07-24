@@ -88,8 +88,6 @@ Achieved an impressive accuracy of 86.01% with the developed Artificial Neural N
 
 ### Deployment
 Deploy the model using a Streamlit app (app.py). The app allows users to input customer data and get churn predictions. To run the app, execute the following command:
-
-
 ```sh
     streamlit run app.py
     ```
