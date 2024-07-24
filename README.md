@@ -1,8 +1,8 @@
 # ANN-Classification-Customer-Churn-Prediction
 
-# ANN-Classification-Customer-Churn-Prediction
-
 This project aims to predict customer churn using an Artificial Neural Network (ANN) model. The project includes data preprocessing, model training, and deployment using a Streamlit app.
+
+
 
 ## Table of Contents
 - [Overview](#overview)
@@ -40,7 +40,8 @@ The dataset used in this project is `Churn_Modelling.csv`. It contains customer 
 
 ### Data Collection
 
-Gather the data required for your project. The specified dataset contains information about customers, including features like credit score, geography, gender, age, tenure, balance, and more.
+Gather the data required for the project. The specified dataset contains information about customers, including features like credit score, geography, gender, age, tenure, balance, and more.
+
 
 ### Exploratory Data Analysis
 
@@ -50,7 +51,7 @@ Explore and analyze the dataset to understand its characteristics. This involves
 - Visualizing distributions of variables
 - Exploring relationships between variables
 
-The EDA process helps you gain insights into the data and make informed decisions about preprocessing steps.
+The EDA process helps to gain insights into the data and make informed decisions about preprocessing steps.
 
 ### Data Preprocessing
 
@@ -67,19 +68,28 @@ Divide the dataset into training and testing sets. The training set is used to t
 
 ### Model Building
 
-Construct an Artificial Neural Network for predicting customer churn. Design the architecture of the neural network, including the number of layers, activation functions, and neurons. In your case, you've used a sequential model with layers of dense neurons.
+Construct an Artificial Neural Network for predicting customer churn. Design the architecture of the neural network, including the number of layers, activation functions, and neurons. A sequential model with layers of dense neurons is used.
 
 ### Model Training
 
-Train the ANN using the training set. Adjust model hyperparameters such as the number of epochs, batch size, and learning rate. Monitor the training process and check for overfitting or underfitting.
+Train the ANN using the training set. Adjust model hyperparameters such as the number of epochs, batch size, and learning rate. Monitor the training process using TensorBoard for performance visualization. The trained model is saved as model.h5.
 
 ### Model Evaluation
 
 Evaluate the trained model using the testing set. Calculate metrics such as accuracy, precision, recall, and F1-score. Generate a confusion matrix and a classification report to assess the model's performance.
 
+### Model Prediction
+
+Use the prediction.ipynb notebook to demonstrate how to use the trained model for predicting customer churn on new data. Load the pre-trained model and apply it to new datasets to generate predictions.
+
 ## Results
 
 Achieved an impressive accuracy of 84.15% with the developed Artificial Neural Network (ANN) model, showcasing the effectiveness of the predictive model in customer churn prediction.
+
+### Deployment
+Deploy the model using a Streamlit app (app.py). The app allows users to input customer data and get churn predictions. To run the app, execute the following command:
+
+This starts a web server and opens the app in the default web browser, enabling interaction with the model for churn predictions.
 
 ## Challenges and Solutions
 
@@ -122,30 +132,4 @@ To run this project, you need to have Python installed on your machine. Follow t
     pip install -r requirements.txt
     ```
 
-## Usage
 
-### Experiments
-
-The `experiments.ipynb` notebook contains the following steps:
-
-1. Data Preprocessing:
-    - Encoding categorical variables using `label_encoder_gender.pkl` and `onehot_encoder_geo.pkl`.
-    - Scaling numerical features using `scaler.pkl`.
-
-2. Model Training:
-    - Building and training the ANN model.
-    - Saving the trained model to `model.h5`.
-
-3. TensorBoard:
-    - Setting up TensorBoard for model performance visualization.
-
-### Model Prediction
-
-The `prediction.ipynb` notebook demonstrates how to use the trained model for predicting customer churn on new data. 
-
-### Deployment
-
-The `app.py` script contains the Streamlit app for deploying the model. To run the app, execute the following command:
-
-```sh
-streamlit run app.py
