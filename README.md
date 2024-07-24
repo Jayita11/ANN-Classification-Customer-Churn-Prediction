@@ -74,6 +74,42 @@ Construct an Artificial Neural Network for predicting customer churn. Design the
 
 Train the ANN using the training set. Adjust model hyperparameters such as the number of epochs, batch size, and learning rate. Monitor the training process using TensorBoard for performance visualization. The trained model is saved as model.h5.
 
+#### TensorBoard Visualization
+
+Monitor the training process using TensorBoard for performance visualization. TensorBoard helps in visualizing the following metrics:
+- **Accuracy**: Track the accuracy of the model over epochs.
+- **Loss**: Observe how the loss decreases over training epochs.
+- **Learning Rate**: Visualize how the learning rate changes during training.
+
+To set up TensorBoard, follow these steps:
+
+1. Import TensorBoard and create a callback:
+    ```python
+    from tensorflow.keras.callbacks import TensorBoard
+    import datetime
+
+    log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
+    ```
+
+2. Include the callback in the model training process:
+    ```python
+    model.fit(
+        x_train, y_train,
+        epochs=50,
+        validation_data=(x_test, y_test),
+        callbacks=[tensorboard_callback]
+    )
+    ```
+
+3. To launch TensorBoard, use the following command in your terminal:
+    ```sh
+    tensorboard --logdir=logs/fit
+    ```
+
+The trained model is saved as model.h5.
+
+
 ### Model Evaluation
 
 Evaluate the trained model using the testing set. Calculate metrics such as accuracy, precision, recall, and F1-score. Generate a confusion matrix and a classification report to assess the model's performance.
