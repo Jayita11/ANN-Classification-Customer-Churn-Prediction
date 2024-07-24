@@ -89,8 +89,10 @@ Achieved an impressive accuracy of 86.01% with the developed Artificial Neural N
 ### Deployment
 Deploy the model using a Streamlit app (app.py). The app allows users to input customer data and get churn predictions. To run the app, execute the following command:
 
-![Screenshot 2024-07-24 at 3 18 41 PM](https://github.com/user-attachments/assets/881c3553-ed8c-4dab-b2e7-1fdcfe98bbbc)
 
+```sh
+    streamlit run app.py
+    ```
 
 
 This starts a web server and opens the app in the default web browser, enabling interaction with the model for churn predictions.
@@ -127,7 +129,7 @@ To run this project, you need to have Python installed on your machine. Follow t
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/ANN-Classification-Customer-Churn-Prediction.git
+    git clone https://github.com/Jayita11/ANN-Classification-Customer-Churn-Prediction/tree/main.git
     cd ANN-Classification-Customer-Churn-Prediction
     ```
 
