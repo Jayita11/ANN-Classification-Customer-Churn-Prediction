@@ -109,10 +109,19 @@ To set up TensorBoard, follow these steps:
 
 The trained model is saved as model.h5.
 
+![unnamed-45](https://github.com/user-attachments/assets/a920526b-51a8-4717-be68-79cde0adbe13)
+![unnamed-46](https://github.com/user-attachments/assets/3e45467d-a0d0-48a2-a27e-9219f04d87da)
+![unnamed-47](https://github.com/user-attachments/assets/c4beb2a6-800c-4677-908d-8995d14f6f73)
+
+
 
 ### Model Evaluation
 
 Evaluate the trained model using the testing set. Calculate metrics such as accuracy, precision, recall, and F1-score. Generate a confusion matrix and a classification report to assess the model's performance.
+
+![unnamed-48](https://github.com/user-attachments/assets/f8c66064-ffc0-4033-a7db-52f332854128)
+![unnamed-49](https://github.com/user-attachments/assets/f510b0c3-74a4-4692-8bb1-7e4eb65177ad)
+
 
 ### Model Prediction
 
@@ -120,16 +129,17 @@ Use the prediction.ipynb notebook to demonstrate how to use the trained model fo
 
 ## Results
 
-Achieved an impressive accuracy of 85.8% with the developed Artificial Neural Network (ANN) model, showcasing the effectiveness of the predictive model in customer churn prediction.
+Achieved an impressive accuracy of 85.9% with the developed Artificial Neural Network (ANN) model, showcasing the effectiveness of the predictive model in customer churn prediction.
 
 ### Deployment
 Deploy the model using a Streamlit app (app.py). The app allows users to input customer data and get churn predictions. To run the app, execute the following command:
-```sh
-streamlit run app.py
-```
+
+![Animation_1](https://github.com/user-attachments/assets/b1aa898c-50bb-42c0-8d4d-22183a596efa)
+
 
 
 This starts a web server and opens the app in the default web browser, enabling interaction with the model for churn predictions.
+
 
 ## Challenges and Solutions
 
