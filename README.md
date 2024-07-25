@@ -2,6 +2,7 @@
 
 This project aims to predict customer churn using an Artificial Neural Network (ANN) model. The project includes data preprocessing, model training, and deployment using a Streamlit app.
 
+![Uploading 173b2e98-d70c-4814-9928-4d7703598e8c.jpg…]()
 
 
 ## Table of Contents
