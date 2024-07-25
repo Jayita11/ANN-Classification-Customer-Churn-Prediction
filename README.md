@@ -16,6 +16,7 @@ This project aims to predict customer churn using an Artificial Neural Network (
   - [Model Training](#model-training)
   - [Model Evaluation](#model-evaluation)
 - [Results](#results)
+- [Deployment](#deployment)
 - [Challenges and Solutions](#challenges-and-solutions)
   - [Mixed Data Types](#mixed-data-types)
   - [Class Imbalance](#class-imbalance)
