@@ -119,8 +119,9 @@ The trained model is saved as model.h5.
 
 Evaluate the trained model using the testing set. Calculate metrics such as accuracy, precision, recall, and F1-score. Generate a confusion matrix and a classification report to assess the model's performance.
 
-![unnamed-48](https://github.com/user-attachments/assets/f8c66064-ffc0-4033-a7db-52f332854128)
-![unnamed-49](https://github.com/user-attachments/assets/f510b0c3-74a4-4692-8bb1-7e4eb65177ad)
+![1](https://github.com/user-attachments/assets/69c4592b-afb5-414a-bf26-9afc6f439c17)
+![2](https://github.com/user-attachments/assets/60396064-0863-48cc-b02a-7962d30c357d)
+
 
 
 ### Model Prediction
